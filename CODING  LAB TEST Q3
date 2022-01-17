@@ -6,8 +6,10 @@ public class TimeTable2 {
      
     public static void main(String[] args) {
     	Scanner input = new Scanner (System.in);
-		int size = input.nextInt();
+		int size ;
 		System.out.println("Enter the size ");
+		size = input.nextInt();
+		
         printTimeTable(size);
     }
      
