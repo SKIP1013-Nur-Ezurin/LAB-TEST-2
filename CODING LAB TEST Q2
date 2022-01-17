@@ -7,7 +7,7 @@ public class CylinderComputation {
 	public static void main(String[] args) {
 		Scanner input = new Scanner (System.in);
 		double radius = input.nextDouble();
-		System.out.println("Enter baseArea " + radius);
+		System.out.println("Enter radius " + radius);
 		double height = input.nextDouble();
 		System.out.println("Enter height " + height);
 		
