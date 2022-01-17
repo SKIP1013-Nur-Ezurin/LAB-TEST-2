@@ -1,0 +1,30 @@
+package shapeComputation;
+import java.lang.Math.*;
+import java.util.Scanner;
+
+public class CylinderComputation {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		double radius = input.nextDouble();
+		System.out.println("Enter baseArea " + radius);
+		double height = input.nextDouble();
+		System.out.println("Enter height " + height);
+		
+		double baseArea, surfaceArea, volume;
+		final double PI = 3.14159265;
+	
+		volume = PI * radius * radius * height;
+		surfaceArea = (2 *Math.PI * radius * radius) * (2 * Math.PI* radius * height);
+		baseArea = 2 * Math.PI * radius * radius ;
+		
+		System.out.printf("The surface area of a cylinder is : %.2f" , surfaceArea);
+		System.out.println();
+		System.out.printf("The base area of a cylinder is : %.2f  ", baseArea);
+		System.out.println();
+		System.out.printf("The volume of a cylinder is :%.2f", volume);
+		
+
+	}
+
+}
